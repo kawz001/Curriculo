@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #636766;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    transition: .5s;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    min-height: 980px;
+    background: #fff;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgb(0, 0, 0, 0.1);
+}
+
+.container .left_side {
+    position: relative;
+    background: #000730;
+    padding: 50px;
+}
+
+.profile_text {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.profile_text .img_bx {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile_text .img_bx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: #fff;
+}
+
+.profile_text h2 {
+    color: #fff;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+
+.profile_text h2 span {
+    font-size: 0.8em;
+    font-weight: 300;
+    font-size: 0.7em;
+}
+
+.contact_info {
+    padding-top: 40px;
+}
+
+.title {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.contact_info ul {
+    position: relative;
+}
+
+.contact_info ul li {
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.contact_info ul li .icon {
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    /* Cor dos icones de contato */
+    color: #3ef7ed;
+}
+
+.contact_info ul li span {
+    color: #fff;
+    font-weight: 300;
+}
+
+.contact_info ul li a {
+    text-decoration: none;
+}
+
+.contact_info.education li {
+    margin-bottom: 15px;
+}
+
+.contact_info.education h5 {
+    color: #3ef7ed;
+    font-weight: 500;
+}
+
+.contact_info.education h4:nth-child(2) {
+    color: #fff;
+    font-weight: 500;
+}
+
+.contact_info.education h4 {
+    color: #fff;
+    font-weight: 300;
+}
+
+.container .right_side {
+    position: relative;
+    background: #fff;
+    padding: 40px;
+    transition: .8s;
+}
+
+.about {
+    margin-bottom: 50px;
+}
+
+.about:last-child {
+    margin-bottom: 0;
+}
+
+.title2 {
+    color: #000730;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #333;
+}
+
+.about .box {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+
+.about .box .year_company {
+    min-width: 150px;
+}
+
+.about .box .year_company h5 {
+    text-transform: uppercase;
+    color: #848c90;
+    font-weight: 600;
+}
+
+.about .box .text h4 {
+    text-transform: uppercase;
+    color: #000000;
+    font-size: 16px;
+}
+
+.skills .box {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills .box h4 {
+    text-transform: uppercase;
+    color: #848c99;
+    font-weight: 500;
+}
+
+
+.interest ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.interest ul li {
+    list-style: none;
+    color: #333;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+.interest ul li .fa {
+    color: #3ef7ed;
+    font-size: 18px;
+    width: 20px;
+}
+
+.container .right_side h1 {
+    color: #3ef7ed;
+}
+
+.trilho {
+    width: 60px;
+    height: 30px;
+    background-color: #848c90;
+    border-radius: 30px;
+    position: relative;
+    cursor: pointer;
+}
+
+.trilho .indicador {
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+    transform: scale(.9);
+    position: absolute;
+    left: 0;
+    transition: .5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.trilho .indicador i {
+    font-size: 20px;
+}
